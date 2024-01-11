@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    &:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+}
+
+[class^="col-"] {
+    padding: 0 0.938rem;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+}
