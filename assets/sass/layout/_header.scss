@@ -1,0 +1,36 @@
+.header {
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    background-image: linear-gradient(to right bottom, $color-primary-light-opacity, $color-primary-dark-opacity), url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    flex-direction: column;
+    @include atcenter;
+    .logo {
+        position: absolute;
+        width: 120px;
+        top: 2.5rem;
+        left: 2.5rem;
+        img {
+            width: 100%;
+        }
+    }
+    &-primary {
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 3.125rem;
+        &-main {
+            font-size: 3.75rem;
+            letter-spacing: 2.188rem;
+            font-weight: 400;
+            animation: moveINRight 1s ease-in-out 1;
+        }
+        &-sub {
+            font-size: 1.25rem;
+            letter-spacing: 1.063rem;
+            animation: moveInLeft 1s ease-in-out;
+        }
+    }
+}
